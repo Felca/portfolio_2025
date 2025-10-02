@@ -8,9 +8,9 @@ const AboutMe = () => {
             <h1 className="text-4xl">About Me</h1>
             
             <div className="flex p-5 gap-3">
-                <div className="m-auto">
+                {/* <div className="m-auto">
                     <Image src={assets.user_image} alt="" className="w-160"/>
-                </div>
+                </div> */}
                 
                 <div className="pl-10">
                     <p className="pb-3">Hi! I’m a BINUS University student majoring Software Engineering. I have a strong interest in technology, sustainability, and innovation, and I enjoy working on projects that combine creativity with problem-solving.</p>

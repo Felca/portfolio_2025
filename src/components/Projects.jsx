@@ -44,7 +44,7 @@ const Projects = () => {
                 <p>Explore a collection of projects showcasing. my expertise in front-end development.</p>
             </div>
 
-            <div className="mx-auto p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-auto gap-10 overflow-y-auto no-scrollbar h-8/12">
+            <div className="mt-5 mx-auto p-5 grid grid-cols-1 md:grid-cols-2 gap-10 overflow-y-auto no-scrollbar h-8/12">
                 {projects.map((project) => (
                     <ProjectCard
                     key={project.id}

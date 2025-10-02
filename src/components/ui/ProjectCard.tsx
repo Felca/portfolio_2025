@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { inherits } from "util";
 
 interface ProjectCardProps {
@@ -49,6 +50,15 @@ const ProjectCard = ({
                         {t}
                     </span>
                 ))}
+            </div>
+
+            <div className="flex gap-3">
+                <div className="text-left underline hover:animate-bounce">
+                    <Link href={githubLink}>Check Github</Link>
+                </div>
+                <div className="text-left underline hover:animate-bounce">
+                    <Link href={demoLink}>Check Demo</Link>
+                </div>
             </div>
 
 

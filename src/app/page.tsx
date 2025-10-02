@@ -2,7 +2,6 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import AboutMe from '@/components/AboutMe'
 import Projects from '@/components/Projects'
-import Link from 'next/link';
 
 export default function Home() {
   return (
