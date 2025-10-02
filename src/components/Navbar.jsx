@@ -45,7 +45,7 @@ const Navbar = () => {
                     <Link href="#project" onClick={() => setIsOpen(false)}>My work</Link>
                     <Link href="#contact" onClick={() => setIsOpen(false)} className="flex items-center gap-2">
                         Contact 
-                        <Image src={assets.arrow_icon} alt="arrow icon" className="w-3" />
+                        <Image src={arrow_icon} alt="arrow icon" className="w-3" />
                     </Link>
                 </div>
             )}
