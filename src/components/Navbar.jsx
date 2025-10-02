@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import {assets} from '@/assets/assets'
+import arrow_icon from "@/assets/arrow-icon.png"
 import Link from "next/link";
 import { useState } from "react";
 
@@ -29,7 +29,7 @@ const Navbar = () => {
             <div>
                 <a href="" className="hidden md:flex items-center gap-2">
                     Contact 
-                    <Image src={assets.arrow_icon} alt="arrow icon" className="w-3"/>
+                    <Image src={arrow_icon} alt="arrow icon" className="w-3"/>
                 </a>
             </div>
 

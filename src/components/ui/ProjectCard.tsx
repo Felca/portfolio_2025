@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { inherits } from "util";
 
 interface ProjectCardProps {
     image: string;

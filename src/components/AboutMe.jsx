@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { assets } from "@/assets/assets";
 
 const AboutMe = () => {
     return (

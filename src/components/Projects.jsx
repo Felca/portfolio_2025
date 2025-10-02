@@ -1,7 +1,7 @@
 import ProjectCard from "./ui/ProjectCard";
-import LOGO_ATAPRINO from "@/assets/public/LOGO_ATAPRINO.png";
-import LOGO_TRACKELING from "@/assets/public/LOGO_TRACKELING.png"
-import LOGO_CATERINGZ from "@/assets/public/LOGO_CATERINGZ.png";
+import LOGO_ATAPRINO from "@/assets/LOGO_ATAPRINO.png";
+import LOGO_TRACKELING from "@/assets/LOGO_TRACKELING.png"
+import LOGO_CATERINGZ from "@/assets/LOGO_CATERINGZ.png";
 
 const projects = [
   {
