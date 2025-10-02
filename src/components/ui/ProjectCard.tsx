@@ -21,7 +21,7 @@ const ProjectCard = ({
 } : ProjectCardProps) => {
     return (
         <>
-        <div className="border-2 border-white shadow-xl/20 rounded-2xl p-10 hover:inset-shadow-sm/50 w-md">
+        <div className="border-2 border-white shadow-xl/20 rounded-2xl p-10 hover:inset-shadow-sm/50 max-w-sm">
             <div>
                 <h1 className="text-2xl font-bold">{title}</h1>
             </div>
