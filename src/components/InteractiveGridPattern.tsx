@@ -20,7 +20,7 @@ export function InteractiveGridPattern({
     ...props
 }: InteractiveGridPatternProps) {
     const [horizontal, vertical] = squares;
-    const [hoveredSquare, setHoveredSquare] = useState<number | null>(null);
+    // const [hoveredSquare, setHoveredSquare] = useState<number | null>(null);
 
     return (
         <svg

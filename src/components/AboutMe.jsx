@@ -11,7 +11,7 @@ const AboutMe = () => {
                 className="absolute inset-0 z-0 pointer-events-auto [mask-image:radial-gradient(white,transparent)]"
                 width={50}
                 height={50}
-                squares={[100, 200]}
+                squares={[60, 60]}
                 squaresClassName="stroke-gray-300/20"
             />
 
