@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { InteractiveGridPattern } from "./test";
 
 const Contact = () => {
-  // 2. Form State and API Logic (using Vercel API Route approach)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,7 +28,6 @@ const Contact = () => {
     setIsSubmitted(false);
 
     try {
-      // Note: This endpoint must be implemented in src/app/api/contact/route.js
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -54,10 +52,8 @@ const Contact = () => {
     }
   };
 
-  // 3. Render the Component using the specified layout
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Grid - uses the user-defined style classes */}
       <InteractiveGridPattern
         className="absolute inset-0 z-0 pointer-events-auto [mask-image:radial-gradient(white,transparent)]"
         width={50}
@@ -66,17 +62,14 @@ const Contact = () => {
         squaresClassName="stroke-gray-300/20"
       />
 
-      {/* Foreground Contact Card */}
       <div className="z-10 w-11/12 max-w-lg mx-auto p-6 md:p-10 bg-white shadow-2xl rounded-xl border border-gray-100">
-        {/* Header Content (Replicating user's structure) */}
         <div className="flex flex-col items-center justify-center gap-4 text-center mb-8">
           {/* Titles */}
           <h1 className="text-3xl font-bold text-gray-900">
             Contact Felicia Josephine
           </h1>
           <p className="text-gray-500 max-w-xs">
-            Have a question, proposal, or just want to say hi? Send me a
-            message!
+            Have a question or just want to say hi? Send me a message!
           </p>
         </div>
 

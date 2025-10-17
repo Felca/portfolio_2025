@@ -2,7 +2,10 @@ import Image from "next/image";
 import vscode from "@/assets/vscode.png"
 import git from "@/assets/git.png"
 import figma from "@/assets/figma.png"
+import github from "@/assets/GITHUBLOGO.png"
+import linkedin from "@/assets/LINKEDINLOGO.jpg"
 import { InteractiveGridPattern } from "./test";
+import Link from "next/link";
 
 const AboutMe = () => {
     return (
@@ -48,7 +51,7 @@ const AboutMe = () => {
                             </div>
                         </div>
 
-                        <div>
+                        <div className="pb-3">
                             <p className="pb-3">Tools that I use:</p>
                             <div className="flex items-center gap-4">
                                 <div className="border-1 border-black p-3 rounded-3xl">
@@ -71,6 +74,30 @@ const AboutMe = () => {
                                         alt="figma logo" 
                                         height={30} width={30}>
                                     </Image>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="pb-3">
+                            <p className="pb-3">Links:</p>
+                            <div className="flex items-center gap-4">
+                                <div className="border-1 border-black p-3 rounded-3xl">
+                                    <Link href={"https://github.com/Felca"}>
+                                        <Image 
+                                            src={github} 
+                                            alt="github" 
+                                            height={30} width={30}>
+                                        </Image>
+                                    </Link>
+                                </div>
+                                <div className="border-1 border-black p-3 rounded-3xl">
+                                    <Link href={"https://www.linkedin.com/in/felicia-josephine-a6237a374/"}>
+                                        <Image 
+                                            src={linkedin} 
+                                            alt="linkedin" 
+                                            height={30} width={30}>
+                                        </Image>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

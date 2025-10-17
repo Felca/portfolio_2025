@@ -17,8 +17,6 @@ const Navbar = () => {
         flex items-center justify-between z-50">
             <Link href="#home">
                 Felicia Josephine
-                {/* <Image src={assets.logo} alt="logo"
-                className="w-28 cursor-pointer"/> */}
             </Link>
 
             <ul className="hidden md:flex justify-evenly gap-10">

@@ -8,6 +8,7 @@ interface ProjectCardProps {
     tech: []; //languanges & tools pke apa
     githubLink?: string;
     demoLink?: string;
+    link?: string;
 }
 
 const ProjectCard = ({
@@ -17,10 +18,11 @@ const ProjectCard = ({
     tech, 
     githubLink,
     demoLink,
+    link,
 } : ProjectCardProps) => {
     return (
         <>
-        <div className="bg-white border-2 border-white shadow-xl/20 rounded-2xl p-10 hover:inset-shadow-sm/50 max-w-sm">
+        <div className="bg-white border-2 border-white shadow-xl/20 rounded-2xl p-10 hover:inset-shadow-sm/50 max-w-sm ">
             <div>
                 <h1 className="text-2xl font-bold">{title}</h1>
             </div>
@@ -61,6 +63,12 @@ const ProjectCard = ({
                     <div className="text-left underline hover:animate-bounce">
                     <Link href={demoLink}>Check Demo</Link>
                     </div>
+                )}
+            </div>
+
+            <div className="text-left underline hover:animate-bounce">
+                {link && (
+                    <Link href={"{link}"}>Proposal Ataprino</Link>
                 )}
             </div>
 

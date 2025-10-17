@@ -10,8 +10,9 @@ const projects = [
     id:1,
     image: LOGO_ATAPRINO,
     title: 'ATAPRINO',
-    description: 'Ataprino adalah sistem atap pintar berbasis Internet of Things (IoT) yang dikembangkan menjadi solusi inovatif untuk mendukung gaya hidup urban yang hemat energi dan praktis.',
+    description: 'Ataprino is an Internet of Things (IoT)-based smart roof system developed as an innovative solution to support an energy-efficient and practical urban lifestyle.',
     tech: ['Wokwi', 'C'],
+    link: "https://drive.google.com/file/d/1lj3eeCpL_zUQz5nqxkJ3F79Qsy6dhOmf/view?usp=sharing",
   },
   {
     id: 2,
@@ -74,6 +75,7 @@ const Projects = () => {
                       tech={project.tech}
                       githubLink={project.githubLink}
                       demoLink={project.demoLink}
+                      link={project.link}
                       />
                   ))}
               </div>

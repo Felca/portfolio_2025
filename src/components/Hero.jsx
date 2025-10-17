@@ -27,7 +27,6 @@ const Hero = () => {
                 <div className="flex flex-col m-10">
                     <h1 className="text-2xl md:text-3xl font-semibold">Hi! I'm Felicia Josephine</h1>
                     <h2 className="text-4xl">Computer science student.</h2>
-                    <p className="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
 
                 <div className="pointer-events-auto">
