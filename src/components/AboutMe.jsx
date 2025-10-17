@@ -1,33 +1,84 @@
 import Image from "next/image";
+import vscode from "@/assets/vscode.png"
+import git from "@/assets/git.png"
+import figma from "@/assets/figma.png"
+import { InteractiveGridPattern } from "./test";
 
 const AboutMe = () => {
     return (
         <>
-        <div className=" max-w-3xl mx-auto h-screen flex flex-col items-center justify-center">
-            <h1 className="text-4xl">About Me</h1>
-            
-            <div className="flex p-5 gap-3">
-                {/* <div className="m-auto">
-                    <Image src={assets.user_image} alt="" className="w-160"/>
-                </div> */}
-                
-                <div className="pl-10">
-                    <p className="pb-3">Hi! I’m a BINUS University student majoring Software Engineering. I have a strong interest in technology, sustainability, and innovation, and I enjoy working on projects that combine creativity with problem-solving.</p>
-                    
-                    {/* <div className="grid grid-cols-3 text-center gap-5 py-5">
-                        <p className="border-2 inline p-10">Kotak</p>
-                        <p className="border-2 inline p-10">Kotak</p>
-                        <p className="border-2 inline p-10">Kotak</p>
-                    </div> */}
+        <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+            {/* Background Grid */}
+            <InteractiveGridPattern
+                className="absolute inset-0 z-0 pointer-events-auto [mask-image:radial-gradient(white,transparent)]"
+                width={50}
+                height={50}
+                squares={[100, 200]}
+                squaresClassName="stroke-gray-300/20"
+            />
 
-                    <p className="pb-3">Tools that I use</p>
-                    {/* <div className="grid grid-cols-auto text-center gap-5 py-5">
-                        <p className="border-2 inline">Kotak</p>
-                        <p className="border-2 inline">Kotak</p>
-                        <p className="border-2 inline">Kotak</p>
-                    </div> */}
+            {/* About me */}
+            <div className="z-10 w-11/12 max-w-4xl mx-auto flex flex-col items-center justify-center gap-6">
+                {/* heading */}
+                <h1 className="text-4xl">About Me</h1>
+                
+                <div>
+                    <div className="pl-10">
+                        {/* description */}
+                        <p className="pb-3">Hi! I’m currently in 5th semester computer science major with minor in software engineering, expected to graduate in 2027. I'm also an active member of Ureeka, where I collaborate with others to build real-world projects.</p>
+
+                        <div className="pb-3">
+                            <p className="pb-3">Languanges that I use:</p>
+                            <div className="flex items-center gap-4">
+                                <div className="border-1 border-black p-3 rounded-3xl">
+                                    Next.js
+                                </div>
+                                <div className="border-1 border-black p-3 rounded-3xl">
+                                    C
+                                </div>
+                                <div className="border-1 border-black p-3 rounded-3xl">
+                                    Java
+                                </div>
+                                <div className="border-1 border-black p-3 rounded-3xl">
+                                    HTML/CSS
+                                </div>
+                                <div className="border-1 border-black p-3 rounded-3xl">
+                                    Python
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p className="pb-3">Tools that I use:</p>
+                            <div className="flex items-center gap-4">
+                                <div className="border-1 border-black p-3 rounded-3xl">
+                                    <Image 
+                                        src={vscode} 
+                                        alt="vscode logo" 
+                                        height={30} width={30}>
+                                    </Image>
+                                </div>
+                                <div className="border-1 border-black p-3 rounded-3xl">
+                                    <Image 
+                                        src={git} 
+                                        alt="git logo" 
+                                        height={30} width={30}>
+                                    </Image>
+                                </div>
+                                <div className="border-1 border-black p-3 rounded-3xl">
+                                    <Image 
+                                        src={figma} 
+                                        alt="figma logo" 
+                                        height={30} width={30}>
+                                    </Image>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
+
         </div>
         </>
     )

@@ -4,6 +4,7 @@ import arrow_icon from "@/assets/arrow-icon.png"
 import Link from "next/link";
 import { useState } from "react";
 
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -21,13 +22,13 @@ const Navbar = () => {
             </Link>
 
             <ul className="hidden md:flex justify-evenly gap-10">
-                <li><Link href="#home">Home</Link></li>
-                <li><Link href="#about">About me</Link></li>
-                <li><Link href="#project">My work</Link></li>
+                <li><Link href="#home" className="hover:underline">Home</Link></li>
+                <li><Link href="#about" className="hover:underline">About me</Link></li>
+                <li><Link href="#project" className="hover:underline">My work</Link></li>
             </ul>
 
             <div>
-                <a href="" className="hidden md:flex items-center gap-2">
+                <a href="#contact" className="hidden md:flex items-center gap-2 hover:underline">
                     Contact 
                     <Image src={arrow_icon} alt="arrow icon" className="w-3"/>
                 </a>
