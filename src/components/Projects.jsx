@@ -3,7 +3,7 @@ import LOGO_ATAPRINO from "@/assets/LOGO_ATAPRINO.png";
 import LOGO_TRACKELING from "@/assets/LOGO_TRACKELING.png"
 import LOGO_CATERINGZ from "@/assets/LOGO_CATERINGZ.png";
 import LOGO_ZENROUTE from "@/assets/LOGO_ZENROUT.png"
-import { InteractiveGridPattern } from "./test";
+import { InteractiveGridPattern } from "./InteractiveGridPattern";
 
 const projects = [
   {

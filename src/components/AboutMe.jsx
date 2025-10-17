@@ -1,10 +1,5 @@
 import Image from "next/image";
-import vscode from "@/assets/vscode.png"
-import git from "@/assets/git.png"
-import figma from "@/assets/figma.png"
-import github from "@/assets/GITHUBLOGO.png"
-import linkedin from "@/assets/LINKEDINLOGO.jpg"
-import { InteractiveGridPattern } from "./test";
+import { InteractiveGridPattern } from "./InteractiveGridPattern";
 import Link from "next/link";
 
 const AboutMe = () => {
@@ -56,21 +51,21 @@ const AboutMe = () => {
                             <div className="flex items-center gap-4">
                                 <div className="border-1 border-black p-3 rounded-3xl">
                                     <Image 
-                                        src={vscode} 
+                                        src="/vscode.png" 
                                         alt="vscode logo" 
                                         height={30} width={30}>
                                     </Image>
                                 </div>
                                 <div className="border-1 border-black p-3 rounded-3xl">
                                     <Image 
-                                        src={git} 
+                                        src="/git.png"
                                         alt="git logo" 
                                         height={30} width={30}>
                                     </Image>
                                 </div>
                                 <div className="border-1 border-black p-3 rounded-3xl">
                                     <Image 
-                                        src={figma} 
+                                        src="/figma.png"
                                         alt="figma logo" 
                                         height={30} width={30}>
                                     </Image>
@@ -84,7 +79,7 @@ const AboutMe = () => {
                                 <div className="border-1 border-black p-3 rounded-3xl">
                                     <Link href={"https://github.com/Felca"}>
                                         <Image 
-                                            src={github} 
+                                            src="/GITHUBLOGO.png"
                                             alt="github" 
                                             height={30} width={30}>
                                         </Image>
@@ -93,7 +88,7 @@ const AboutMe = () => {
                                 <div className="border-1 border-black p-3 rounded-3xl">
                                     <Link href={"https://www.linkedin.com/in/felicia-josephine-a6237a374/"}>
                                         <Image 
-                                            src={linkedin} 
+                                            src="/LINKEDINLOGO.jpg"
                                             alt="linkedin" 
                                             height={30} width={30}>
                                         </Image>

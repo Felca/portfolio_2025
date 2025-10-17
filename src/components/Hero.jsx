@@ -1,6 +1,6 @@
 import profile_img from "@/assets/profile-img.png"
 import Image from "next/image";
-import { InteractiveGridPattern } from "@/components/test"
+import { InteractiveGridPattern } from "@/components/InteractiveGridPattern"
 
 const Hero = () => {
     return (

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { InteractiveGridPattern } from "./test";
+import { InteractiveGridPattern } from "./InteractiveGridPattern";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
