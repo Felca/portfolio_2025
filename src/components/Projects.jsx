@@ -1,14 +1,10 @@
 import ProjectCard from "./subcomponents/ProjectCard";
-import LOGO_ATAPRINO from "@/assets/LOGO_ATAPRINO.png";
-import LOGO_TRACKELING from "@/assets/LOGO_TRACKELING.png"
-import LOGO_CATERINGZ from "@/assets/LOGO_CATERINGZ.png";
-import LOGO_ZENROUTE from "@/assets/LOGO_ZENROUT.png"
 import { InteractiveGridPattern } from "./InteractiveGridPattern";
 
 const projects = [
   {
     id:1,
-    image: LOGO_ATAPRINO,
+    image: "/LOGO_ATAPRINO.png",
     title: 'ATAPRINO',
     description: 'Ataprino is an Internet of Things (IoT)-based smart roof system developed as an innovative solution to support an energy-efficient and practical urban lifestyle.',
     tech: ['Wokwi', 'C'],
@@ -16,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    image: LOGO_TRACKELING,
+    image: "/LOGO_TRACKELING.png",
     title: "Trackeling",
     description:
       "Mobile application that allows customers to find and order food from nearby street vendors, while also allowing vendors to find said customers and deliver the foods easily.",
@@ -26,7 +22,7 @@ const projects = [
   },
   {
     id: 3,
-    image: LOGO_CATERINGZ,
+    image: "/LOGO_CATERINGZ.png",
     title: "Cateringz",
     description: "A static website about catering services, with an original design. This website aims to connect customers with local catering services easily and quickly. Through this platform, users can browse menus from various catering providers and customize packages according to their event needs.",
     tech: ["HTML", "CSS", "Javascript"],
@@ -35,7 +31,7 @@ const projects = [
   },
   {
     id:4,
-    image: LOGO_ZENROUTE,
+    image: "/LOGO_ZENROUT.png",
     title: "ZenRoute",
     description: "ZenRoute is a simple web app that helps you organize your trips and the places you want to visit. Whether it's a weekend getaway or a month-long adventure, this app lets you create trips, add multiple locations, and track your travel plans in one place.",
     tech: ["Next.js", "TailwindCSS"],

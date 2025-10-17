@@ -23,7 +23,9 @@ const AboutMe = () => {
                 <div>
                     <div className="pl-10">
                         {/* description */}
+                        <p>E-mail: fjosephine131@gmail.com</p>
                         <p className="pb-3">Hi! I’m currently in 5th semester computer science major with minor in software engineering, expected to graduate in 2027. I'm also an active member of Ureeka, where I collaborate with others to build real-world projects.</p>
+
 
                         <div className="pb-3">
                             <p className="pb-3">Languanges that I use:</p>

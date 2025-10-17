@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import arrow_icon from "@/assets/arrow-icon.png"
 import Link from "next/link";
 import { useState } from "react";
 
@@ -28,7 +27,7 @@ const Navbar = () => {
             <div>
                 <a href="#contact" className="hidden md:flex items-center gap-2 hover:underline">
                     Contact 
-                    <Image src={arrow_icon} alt="arrow icon" className="w-3"/>
+                    <Image src="/arrow-icon.png" width={10} height={10} alt="arrow icon" className="w-3"/>
                 </a>
             </div>
 
@@ -44,7 +43,7 @@ const Navbar = () => {
                     <Link href="#project" onClick={() => setIsOpen(false)}>My work</Link>
                     <Link href="#contact" onClick={() => setIsOpen(false)} className="flex items-center gap-2">
                         Contact 
-                        <Image src={arrow_icon} alt="arrow icon" className="w-3" />
+                        <Image src="/arrow-icon.png" width={10} height={10} alt="arrow icon" className="w-3" />
                     </Link>
                 </div>
             )}
