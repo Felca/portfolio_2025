@@ -34,8 +34,7 @@ const Hero = () => {
                     <Image src="/download-icon.png" width={20} height={20} alt="arrow icon"/>
                     <a 
                         href={"/Resume.pdf"} 
-                        download={"Felicia Josephine CV.pdf"} 
-                        className=""
+                        download={"Felicia_Josephine_CV.pdf"} 
                     >
                         My Resume / CV
                     </a>
