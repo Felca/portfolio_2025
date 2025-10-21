@@ -33,7 +33,7 @@ const Hero = () => {
                 <div className="flex items-center gap-1.5 pointer-events-auto border-2 border-gray-400 px-6 py-3 rounded-md bg-white transition duration-500 hover:invert">
                     <Image src="/download-icon.png" width={20} height={20} alt="arrow icon"/>
                     <a 
-                        href={"/Resume.pdf"} 
+                        href={"/Felicia_Josephine_CV.pdf"} 
                         download={"Felicia_Josephine_CV.pdf"} 
                     >
                         My Resume / CV
